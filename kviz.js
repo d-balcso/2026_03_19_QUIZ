@@ -16,9 +16,9 @@ if (urlSearch.includes("?")) {
 
         } else if (kerdesParok[i].startsWith("vizeses")) {
             vizeses = kerdesParok[i].split("=")[1]
+            console.log("vizeses: ", vizeses);
         }
-
-
+        
     }
     let latnivalok = []
     let latnivalokSzoveg = ""
@@ -27,6 +27,14 @@ if (urlSearch.includes("?")) {
             latnivalok.push(kerdesParok[i].split("=")[1])
         }
     }
+
+    let vizesesEredmenye = document.getElementById("vizeses_eredmenye")
+    if (vizeses === "Gullfoss") {
+        vizesesEredmenye.innerHTML = "<p style='color: green;'>Helyes válasz</p>"
+    } else {
+        vizesesEredmenye.innerHTML = "<p style='color: red;'>Rossz válasz</p>"
+    }
+
     latnivalokSzoveg = latnivalok.join(", ")
     console.log(latnivalok);
     console.log(latnivalokSzoveg);
