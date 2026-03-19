@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<form action="index.html" method="get">
+    <h2>1. Mi Izland fővárosa?</h2>
+    <label for="fovaros">főváros:</label><br>
+    <input type="text" id="fovaros" name="fovaros" placeholder="Pl. Reykjavik"><br>
+
+    <h2>1.melyik izlandi vizeses</h2>
+    <input type="radio" id="Gullfoss" name="vizeses" value="Gullfoss">
+    <label for="Gullfoss">Gullfoss</label><br>
+    <input type="radio" id="Seljalandsfoss" name="vizeses" value="Seljalandsfoss">
+    <label for="Seljalandsfoss">Seljalandsfoss</label><br>
+
+    <h2>melyiket nezned meg? </h2>
+    <input type="checkbox" id="pingvin" name="latnivalo" value="pingvin">
+    <label for="pingvin">pingvin</label><br>
+    <input type="checkbox" id="balna" name="latnivalo" value="balna">
+    <label for="balna">bálna</label><br>
+    <input type="checkbox" id="foka" name="latnivalo" value="foka">
+    <label for="foka">fóka</label><br>
+
+    <input type="submit" value="Submit">
+</form>
+
+    <div id="felhasználói_input"></div>
+    <script src="kviz.js"></script>
+    
+</body>
+</html>
